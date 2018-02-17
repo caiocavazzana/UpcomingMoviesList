@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Upcoming Movies List</string>
+    <string name="poster_image">Poster Image</string>
+    <string name="test">test</string>
+    <string name="error_loading_movies">Error while loading movies, verify your internet connection and try again!</string>
+    <string name="no_upcoming_movies">No upcoming movies!</string>
+    <string name="tap_to_view_details">Tap to view details.</string>
+    <string name="movie_not_available">Movie not available</string>
+    <string name="retry">Retry</string>
+</resources>
