@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/layout_movies"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview_movies"
+            app:layoutManager="android.support.v7.widget.GridLayoutManager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_loading_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="8dp">
+        <TextView
+            android:drawableTop="@drawable/ic_cloud_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/error_loading_movies"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/button_retry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Button"
+            android:text="@string/retry"/>
+    </LinearLayout>
+</LinearLayout>
